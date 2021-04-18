@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel='stylesheet' href='CountdownCSS.css'>
+    </head>
+
+    <body>
+        <br>
+        <h1>Educational Games</h1>
+        <br>
+        <p class = "Top_text">Click <a href="HomepageHTML.html">here</a> to go to the homepage.<br></p><br>
+        <div>Time left = <span id="timer"></span></div>
+
+        <p id="timerIsDone"></p>
+
+
+        <button type="button" onclick="score()" class="button">Press to score</button>
+
+        <p id=pScore></p>
+    <script>
+        var is_timer_over = ""
+  document.getElementById('timer').innerHTML =
+  000 + ":" + 10;
+ is_timer_over = startTimer();
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+   m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  if(m<0){isTimerDone = document.getElementById('timerIsDone').innerHTML = "Your score is " + vscore; return "Yes"}
+  
+  document.getElementById('timer').innerHTML =
+    m + ":" + s;
+  console.log(m)
+  setTimeout(startTimer, 1000);
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
+
+        var vscore = 0;
+        function score() {
+            if (m == 0){
+                vscore += 1
+            }
+        }
+    </script>
+
+
+
+
+    </body>
+</html>
