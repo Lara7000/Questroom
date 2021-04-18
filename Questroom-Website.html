@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Questroom</title>
+        
+    </head>
+
+    <body>
+        <h1>Questroom</h1>
+
+        <form>
+            <label for="chat_text">Chat:</label><br>
+            <input type="text" id="chat_text" name="ctext"><br>
+           
+
+          </form>
+
+          <button type="button" onclick="get_chat()">Enter to chat</button>
+        
+          <p id="output_text"></p>
+          
+        <script>
+        function get_chat() {
+		var text1 = document.getElementById("chat_text").value 
+        var text2 = document.getElementById("output_text").innerHTML
+        document.getElementById("output_text").innerHTML = text2 + "<br>" + text1
+     
+        }
+        </script>
+          
+          
+          
+    </body>
+
+
+
+
