@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Student Chat Room</title>
+        <link rel='stylesheet' href='Student_Chat_RoomCSS.css'>
+    </head>
+
+    <body>
+        <h1>Student Chat Room</h1>
+        <p class = "Top_text">Click <a href="file:///C:/Users/JLPC/Questroom-main/HomepageHTML.html">here</a> to go to the homepage.<br></p><br>
+        <p class="Top_text">Type here to instantly communicate with other students</p><br><br>
+        
+        <div class="Top_text">
+            <form>
+                <label for="chat_text" >Chat:</label><br>
+                <input type="text" id="chat_text" name="ctext" class="chat_box"><br>
+               
+                <br>
+              </form>
+    
+              <button type="button" onclick="get_chat()" class="button">Press to chat</button>
+            
+              <p id="output_text"></p>
+        </div>
+        
+          
+        <script>
+        function get_chat() {
+		var text1 = document.getElementById("chat_text").value 
+        var text2 = document.getElementById("output_text").innerHTML
+        document.getElementById("output_text").innerHTML = text2 + "<br>" + text1
+     
+        }
+        </script>
+          
+          
+          
+    </body>
+
+
+
+
