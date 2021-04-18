@@ -1,0 +1,31 @@
+h1 {
+    color: #414141;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.chat_box {
+    background-color: #ffffff;
+
+}
+
+.button {
+    background-color: #ffffff;
+
+
+}
+
+.Top_text {
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+div.chat_class {
+    width: 177px;
+  margin: 0 auto;
+
+
+}
